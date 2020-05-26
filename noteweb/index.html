@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NOTE-VAULT</title>
+    <meta name="description" content="A note-taker app." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Capriola&family=Gloria+Hallelujah&family=Marmelad&family=Permanent+Marker&family=Ruda:wght@700&display=swap');
+      </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-expand-md navbar-light topnav fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="notelogo.png" width="60" height="50" class="logo" />
+        <a href="#">NOTE <strong>VAULT</strong></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#notes">YourNotes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="center impnotes" id="home">
+      <br />
+      <br>
+      
+
+      <h2
+        style="
+          color: #0B2A66;
+          font: xx-large;
+          text-transform: uppercase;
+          font-weight: bold;
+        "
+      >
+        Note-Vault is ready for you.<br />Store things you wouldn't want to
+        forget!
+      </h2>
+      <br />
+      <hr class="hr1" />
+    </div>
+    <br />
+    
+    <div class="center"  >
+      <form>
+        
+        <textarea
+        class="areaoftext"
+          name="formNoteText"
+          id="formNoteText"
+          cols="42"
+          rows="6"
+          maxlength="300"
+          placeholder="Take a note..."
+          style="text-align: center; margin: auto;"
+        ></textarea>
+        
+        <br />
+        <select name="formColor" id="formColor">
+          <option value="red">RED</option>
+          <option value="violet">VIOLET</option>
+          <option value="blue">CYAN</option>
+          <option value="yellow">YELLOW</option>
+        </select>
+        <button id="formAddButton">ADD</button>
+      </form>
+    </div>
+
+    
+    <div id="notes"></div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
