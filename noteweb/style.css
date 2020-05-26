@@ -220,3 +220,15 @@ form button {
 .editButton {
   padding-top: 5px;
 }
+
+#editId {
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 15%;
+
+  background-color: white;
+
+  padding: 4px 4px;
+  margin-right: 3px;
+  float: right;
+}
